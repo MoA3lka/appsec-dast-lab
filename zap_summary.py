@@ -14,6 +14,9 @@ OWASP_BY_CWE = {
     "352": "A01 Broken Access Control",
     "200": "A01 Broken Access Control",
     "264": "A01 Broken Access Control",
+    "829": "A08 Software and Data Integrity Failures",
+    "497": "A01 Broken Access Control",
+    "524": "A04 Insecure Design",
     "319": "A02 Cryptographic Failures",
     "16": "A05 Security Misconfiguration",
 }

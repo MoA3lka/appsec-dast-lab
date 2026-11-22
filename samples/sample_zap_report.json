@@ -1,0 +1,19 @@
+{
+  "@version": "2.15.0",
+  "site": [
+    {
+      "@name": "http://juice-shop:3000",
+      "alerts": [
+        {"name": "Content Security Policy (CSP) Header Not Set", "riskcode": "2", "cweid": "693",
+         "instances": [{"uri": "http://juice-shop:3000/"}, {"uri": "http://juice-shop:3000/robots.txt"}],
+         "solution": "<p>Ensure that your web server sets the Content-Security-Policy header.</p>"},
+        {"name": "Cross-Domain Misconfiguration", "riskcode": "2", "cweid": "264",
+         "instances": [{"uri": "http://juice-shop:3000/"}],
+         "solution": "<p>Restrict the Access-Control-Allow-Origin header to trusted domains.</p>"},
+        {"name": "Timestamp Disclosure - Unix", "riskcode": "1", "cweid": "200",
+         "instances": [{"uri": "http://juice-shop:3000/main.js"}],
+         "solution": "<p>Confirm the timestamp is not sensitive.</p>"}
+      ]
+    }
+  ]
+}
